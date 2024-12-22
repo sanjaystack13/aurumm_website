@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+.custom-low-navbar-container {
+  background-color: #212121;  
+  color: #f1f1f1;
+  padding: 40px 0;
+  font-family: 'Montserrat', sans-serif;  
+}
+
+.custom-low-navbar-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.custom-logo-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-right: 20px;
+}
+
+.custom-logo-img {
+  max-width: 180px;
+  margin-bottom: 15px;
+}
+
+.custom-logo-description {
+  font-size: 16px;
+  color: #b0b0b0;
+  text-align: center;
+  font-weight: 400; 
+}
+
+.custom-solutions-col, .custom-quick-link-col, .custom-contact-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.custom-section-title {
+  font-size: 24px;
+  font-weight: 700; 
+  color: #ff9b00;  
+  margin-bottom: 15px;
+  text-transform: uppercase; 
+}
+
+.custom-solution-link, .custom-quick-link {
+  font-size: 18px;
+  color: #f1f1f1;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease, transform 0.2s ease;
+  font-weight: 600;  
+}
+
+.custom-solution-link:hover, .custom-quick-link:hover {
+  color: #ff9b00; 
+  transform: translateX(5px);  
+}
+
+.custom-link-icon {
+  margin-right: 10px;
+}
+
+.custom-contact-title {
+  font-size: 20px;
+  font-weight: 700;  
+  color: #ff9b00;
+  margin-bottom: 15px;
+}
+
+.custom-contact-info {
+  font-size: 16px;
+  color: #b0b0b0;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  margin:10px ;
+}
+
+.custom-footer-line {
+  border: 1px solid #444;
+  margin-top: 30px;
+}
+
+.custom-footer-row {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.custom-footer-text {
+  color: #ccc;
+  font-size: 14px;
+}
+
+.custom-solutions-col, .custom-quick-link-col, .custom-contact-col {
+  background-color: #2c2c2c;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .custom-low-navbar-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .custom-logo-col {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .custom-solutions-col, .custom-quick-link-col, .custom-contact-col {
+    margin-bottom: 30px;
+  }
+}

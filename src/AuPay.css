@@ -1,0 +1,208 @@
+.aupaybody {
+    font-family: 'Montserrat', sans-serif;  
+    background: linear-gradient(135deg, #000000, #203a43, #2c5364); /* Dark ocean gradient */
+    color: #f0f0f0;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh; 
+    overflow-x: hidden; 
+  }
+  
+  .headingone {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.4));
+    color: #ffffff;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .headingone h2 {
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #e1ccec;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    font-family: "Poppins", sans-serif;
+    animation: fadeIn 1.2s ease-out;
+  }
+  
+  .headingone h1 {
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #f0f0f0;
+    letter-spacing: 4px;
+    margin: 20px 0;
+    line-height: 1.3;
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+    animation: slideInFromTop 1.5s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromTop {
+    0% {
+      transform: translateY(-60px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .contentone {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    margin: 50px auto;
+    max-width: 1200px;
+    backdrop-filter: blur(10px);
+  }
+  
+  .contentone h3 {
+    font-size: 34px;
+    font-weight: 700;
+    color: #f8e7f3;
+    margin: 20px 0;
+  }
+  
+  .contentone p {
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
+  .contentone img {
+    width: 45%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .feature-section {
+    margin-bottom: 60px;
+  }
+  
+  .section-title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    color: #ffd700; 
+    margin-bottom: 40px;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  }
+  
+  .feature-card {
+    background: rgba(255, 255, 255, 0.1)!important;
+    border: none;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    backdrop-filter: blur(8px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  }
+  
+  .feature-card h3 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #fbd46d;
+    margin-bottom: 15px;
+  }
+  
+  .feature-card p {
+    font-size: 18px;
+    color: #dcdcdc;
+  }
+  
+  .feature-card-item {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #141e30, #243b55);
+    border-radius: 12px;
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    color: white!important;
+  }
+  
+  .feature-card-item img {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .feature-card-item p {
+    font-size: 18px;
+    color: #f9f9f9;
+    margin-bottom: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .feature-card {
+      padding: 20px;
+    }
+  
+    .feature-card h3 {
+      font-size: 22px;
+    }
+  
+    .feature-card-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .feature-card-item img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 15px;
+    }
+  
+    .contentone {
+      flex-direction: column;
+      padding: 30px;
+    }
+  
+    .contentone img {
+      width: 100%;
+      margin-top: 30px;
+    }
+  
+    .contentone h3 {
+      font-size: 30px;
+    }
+  
+    .headingone h2 {
+      font-size: 40px;
+    }
+  
+    .headingone h1 {
+      font-size: 52px;
+    }
+  }
+  
